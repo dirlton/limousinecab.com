@@ -376,11 +376,7 @@
                     to="/gazania/location-map"
                     class="transition text-theme-600 hover:text-theme-700"
                     >How Sun Drive</NuxtLink>, just a 3-minute walk to Bartley MRT. 
-             It consists of 250 units in total, with a mix of 1 Bedroom Types to 4 Bedroom Types, Mezzanine &amp; Penthouses (Can refer to our 
-                    <NuxtLink
-                    to="/gazania/floor-plan"
-                    class="transition text-theme-600 hover:text-theme-700"
-                    >Floor Plans</NuxtLink>).  
+             It consists of 250 units in total, with a mix of 1 Bedroom Types to 4 Bedroom Types, Mezzanine &amp; Penthouses.
            </p>
            <p>
               The Gazania Floor Plans can be view <NuxtLink
