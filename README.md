@@ -1,4 +1,4 @@
-# the-lilium-gazania
+# the-lilium
 
 ## Build Setup
 
