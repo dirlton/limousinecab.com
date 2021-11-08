@@ -373,7 +373,7 @@
             </h3>
            <p>
              The Gazania is an anticipated FREEHOLD upcoming launch condominium located at <NuxtLink
-                    to="/location-map"
+                    to="/gazania/location-map"
                     class="transition text-theme-600 hover:text-theme-700"
                     >How Sun Drive</NuxtLink>, just a 3-minute walk to Bartley MRT. 
              It consists of 250 units in total, with a mix of 1 Bedroom Types to 4 Bedroom Types, Mezzanine &amp; Penthouses (Can refer to our 
@@ -384,7 +384,7 @@
            </p>
            <p>
               The Gazania Floor Plans can be view <NuxtLink
-                        to="/floor-plan"
+                        to="/gazania/floor-plan"
                         class="transition text-theme-600 hover:text-theme-700"
                         >here</NuxtLink>. 
                 Future Residents or Investors of The Gazania can look into famous education institutions 
@@ -395,7 +395,7 @@
            <p>
              Interested parties may check out and download 
              <NuxtLink
-                        to="/e-brochure"
+                        to="/gazania/e-brochure"
                         class="transition text-theme-600 hover:text-theme-700"
                         >The Gazania E-Brochure</NuxtLink>.
            </p>
