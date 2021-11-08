@@ -5,7 +5,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/the-lilium',
+    base: '/lilium-gazania',
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
