@@ -194,7 +194,7 @@
                 </p>
                 <p>
                   The Gazania condominium is located on <NuxtLink
-                    to="/location-map"
+                    to="/gazania/location-map"
                     class="transition text-theme-600 hover:text-theme-700"
                     >How Sun Drive</NuxtLink> in 
                     <NuxtLink
