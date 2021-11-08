@@ -16,7 +16,7 @@
          <h3 class="text-center"> Source: https://www.businesstimes.com.sg/real-estate/singapores-property-market-can-withstand-the-impact-of-covid-19</h3>
         <section class="py-6">
           <NuxtLink
-            to="/press/press-two"
+            to="/press/press-ten"
             class="
               inline-flex
               items-center

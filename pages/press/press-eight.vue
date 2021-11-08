@@ -78,7 +78,7 @@
                   
         <section class="py-6">
           <NuxtLink
-            to="/press/press-two"
+            to="/press/press-nine"
             class="
               inline-flex
               items-center
