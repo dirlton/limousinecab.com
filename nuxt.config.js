@@ -49,7 +49,10 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-flatpickr'],
+  modules: ['nuxt-flatpickr','@nuxtjs/gtm'],
+  gtm:{
+    id:'GTM-NXNK4P8'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
