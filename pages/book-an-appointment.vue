@@ -473,6 +473,27 @@ export default {
             '<br><b>Level Of Interest: </b>' +
             this.interest,
         }).then(() => {
+          Email.send({
+          Host: 'smtp.gmail.com',
+          Username: process.env.EMAIL_USER,
+          Password: process.env.EMAIL_API,
+          To: this.email,
+          From: process.env.EMAIL_USER,
+          Subject: 'The Lilium & The Gazania - Receipt Acknowledgement for Appointment',
+          Body:
+            '<h3><b>Dear ' + this.name + '</b><h3>' + 
+            '<h4>Congratulations!</h4>'+ 
+            '<h4>You have successfully booked an appointment with the developer staff from SingHaiyi to view the showflat for The Lilium & The Gazania on '+
+            this.date + ' at ' + this.time + 
+            '.</h4>' + 
+            '<h4>Our developer staff will be in touch with you shortly to confirm on your appointment. </h4>'+ 
+            '<h4>Meanwhile, please do not book another appointment elsewhere to avoid duplication and complication </h4>'+
+            '<h4>In the event that you like to change your appointment, simply reply to this email with your new preffered appointment date and time.</h4>'+ 
+            '<h4>Should you have any queries, you may contact us by replying to this email or calling us at <a href="tel:+6561003337"><b> +65 6100 3337 </b></a>.</h4>' +  
+            '<h4>Have a nice day ahead!</h3><br>' + 
+            '<h4>Thanks,</h4>' + 
+            '<h4>The Lilium & The Gazania</h4>',
+        })
           this.success = true
           this.reset()
         })

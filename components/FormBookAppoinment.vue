@@ -334,6 +334,24 @@ export default {
             '<br><b>Appointment: </b>' +
             this.isAppointment,
         }).then(() => {
+          Email.send({
+          Host: 'smtp.gmail.com',
+          Username: process.env.EMAIL_USER,
+          Password: process.env.EMAIL_API,
+          To: this.email,
+          From: process.env.EMAIL_USER,
+          Subject: 'The Lilium & The Gazania - Receipt Acknowledgement',
+          Body:
+            '<h3><b>Dear ' + this.name + '</b><h3>' + 
+            '<h4>Thank you for your interest in The Lilium & The Gazania. You will be posted on all latest updates for the new upcoming condominium.</h4>' + 
+            '<h4>If you have left an inquiry, our staff will be in touch with you as soon as we can. </h4>'+ 
+            '<h4>If you would like to view the show flat and get direct developer price with discounts, you need to Book an Appointment here before coming down. </h4>'+ 
+            '<h4>Please check back our website for The Lilium & The Gazania as updates are uploaded regulary: <a href="https://theliliumofficial.com.sg/"> <b>theliliumofficial.com.sg</b></a></h4>' +  
+            '<h4>Should you have any queries, simply call us at <a href="tel:+6561003337"><b>+65 6100 3337</b></a> or reply to this email: <a href="mailto:gdpropertysg@gmail.com"><b>gdpropertysg@gmail.com</b></a></h4>'+
+            '<h4>Have a nice day ahead!</h4><br>' + 
+            '<h4>Thanks,</h4>' + 
+            '<h4>The Lilium & The Gazania</h4>',
+        })
           this.success = true
           this.reset()
         })

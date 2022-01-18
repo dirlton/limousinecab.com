@@ -30,7 +30,7 @@
         <div class="py-6 bg-theme-50">
           <div class="text-center">
             <h4 class="text-xl font-medium">Latest Updates</h4>
-            <p class="text-gray-600">Last updated: 8th December 2021</p>
+            <p class="text-gray-600">Last updated: 19th January 2022</p>
           </div>
           <div class="max-w-6xl px-4 mx-auto prose text-gray-800">
             <div class="max-w-2xl px-4 mx-auto">
