@@ -397,6 +397,7 @@ export default {
       interest: null,
       errors: '',
       success: false,
+      email_2:'sales@theliliumofficial.com.sg',
       config: {
         wrap: true,
         altFormat: 'd/m/Y - l',
@@ -456,29 +457,47 @@ export default {
           Password: process.env.EMAIL_API,
           To: process.env.EMAIL_USER,
           From: this.email,
-          Subject: process.env.EMAIL_TITLE + ' Book An Appointment',
+          Subject: 'The Lilium & The Gazania - New Booking Submission' +' [' + this.name +']',
           Body:
-            '<b>Visit Date: </b>' +
-            this.date +
-            '<br><b> Time: </b>' +
-            this.time +
-            '<br><b>Bedroom Size Preference: </b>' +
-            this.bedroom +
-            '<br><b>Name: </b>' +
-            this.name +
-            '<br><b>Email: </b>' +
-            this.email +
-            '<br><b>Mobile: </b>' +
-            this.mobile +
-            '<br><b>Level Of Interest: </b>' +
-            this.interest,
+            '<h3>Dear Dave, </h3>' +
+            '<h4>Below are the details for the New Booking Submission, do check it out: </h4>' +
+            '<h4>Date: ' + this.date + '</h4>' +
+            '<h4>Time: ' + this.time + '</h4>' +
+            '<h4>Bedroom Size: ' + this.bedroom + '</h4>' +
+            '<h4>Name: ' + this.name + '</h4>' +
+            '<h4>Email: ' + this.email + '</h4>' +
+            '<h4>Mobile: ' + this.mobile + '</h4>' +
+            '<h4>Level Of Interest: ' + this.interest + '</h4>' +
+            '<br><h4>Thanks, </h4>' + 
+            '<h4>The Lilium & The Gazania</h4>',
         }).then(() => {
+        /*  // will pass to the ddave@singhaiyi.com
+          Email.send({
+          Host: 'smtp.gmail.com',
+          Username: process.env.EMAIL_USER,
+          Password: process.env.EMAIL_API,
+          To: this.email_3,
+          From: this.email_2,
+          Subject: 'The Lilium & The Gazania - New Booking Submission' +' [' + this.name +']',
+          Body:
+            '<h3>Dear Dave, </h3>' +
+            '<h4>Date: ' + this.date +  '</h4>' +
+            '<h4>Time: ' + this.time +  '</h4>' +
+            '<+>Bedroom Size: ' + this.bedroom + '</h4>' +
+            '<h4>Name: ' + this.name + '</h4>' +
+            '<h4>Email: ' + this.email +  '</h4>' +
+            '<h4>Mobile: ' + this.mobile +  '</h4>' +
+            '<h4>Level Of Interest: ' + this.interest + '</h4>' +
+            '<br><h4>Thanks, </h4>' + 
+            '<h4>The Lilium & The Gazania</h4>', 
+        }) */
+        // will pass to the user using sales@theliliumofficial.com.sg
           Email.send({
           Host: 'smtp.gmail.com',
           Username: process.env.EMAIL_USER,
           Password: process.env.EMAIL_API,
           To: this.email,
-          From: process.env.EMAIL_USER,
+          From: this.email_2,
           Subject: 'The Lilium & The Gazania - Receipt Acknowledgement for Appointment',
           Body:
             '<h3><b>Dear ' + this.name + '</b><h3>' + 
@@ -489,7 +508,7 @@ export default {
             '<h4>Our developer staff will be in touch with you shortly to confirm on your appointment. </h4>'+ 
             '<h4>Meanwhile, please do not book another appointment elsewhere to avoid duplication and complication </h4>'+
             '<h4>In the event that you like to change your appointment, simply reply to this email, <a href="mailto:dave@singhaiyi.com"><b>dave@singhaiyi.com</b></a> with your new preffered appointment date and time.</h4>'+ 
-            '<h4>Should you have any queries, you may contact us by replying to this email, <a href="mailto:dave@singhaiyi.com"><b>dave@singhaiyi.com</b></a>, or calling us at <a href="tel:+6561003337"><b> +65 6100 3337 </b></a>.</h4>' +  
+            '<h4>Should you have any queries, you may contact us by replying to this email, <a href="mailto:dave@singhaiyi.com"><b>dave@singhaiyi.com</b></a>, or calling us at <a href="tel:+6561003337"><b>+65 6100 3337</b></a>.</h4>' +  
             '<h4>Have a nice day ahead!</h3><br>' + 
             '<h4>Thanks,</h4>' + 
             '<h4>The Lilium & The Gazania</h4>',

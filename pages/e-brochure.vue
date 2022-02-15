@@ -8,7 +8,7 @@
     <section>
       <div class="max-w-6xl px-4 py-12 mx-auto space-y-6">
         <div class="flex justify-center">
-          <NuxtLink to="/public/pdf/The-Lilium-E-brochure-Singapore.pdf" target="_blank"
+          <NuxtLink to="/public/pdf/The Lilium_E-brochure_Latest.pdf" target="_blank"
             ><img
               src="~assets/img/front-cover-the-lilium.png"
               width="500"

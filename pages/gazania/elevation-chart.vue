@@ -17,7 +17,7 @@
         </div>
         <div class="text-center">
           <NuxtLink
-            to="/public/pdf/gazania-elevation-chart.pdf"
+            to="/public/pdf/The Gazania Elevation Chart.pdf"
             target="_blank"
             class="font-medium hover:underline"
           >
@@ -66,7 +66,7 @@
 <script>
 export default {
   data() {
-     return { url: process.env.BASE_URL ? '/' + process.env.BASE_URL + '/public/pdf/gazania-elevation-chart.pdf': '/public/pdf/gazania-elevation-chart.pdf'}
+     return { url: process.env.BASE_URL ? '/' + process.env.BASE_URL + '/public/pdf/The Gazania Elevation Chart.pdf': '/public/pdf/The Gazania Elevation Chart.pdf'}
   },
 }
 </script>

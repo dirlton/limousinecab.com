@@ -3,10 +3,10 @@ export default {
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  /* target: 'static',
    router: {
     base: '/lilium-gazania',
-  }, 
+  }, */
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'The Lilium',
@@ -23,7 +23,7 @@ export default {
     script: [
       { src: 'https://smtpjs.com/v3/smtp.js' },
       {
-        src: 'https://code.jquery.com/jquery-3.6.0.min.js',
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js',
         integrity: 'sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=',
         crossorigin: 'anonymous',
       },

@@ -71,7 +71,7 @@
             v-model="name"
             type="text"
             required="required"
-            class="uppercase form-input"
+            class="form-input"
           />
           <!---->
         </div>
@@ -298,6 +298,9 @@ export default {
     success: false,
     policyIsAgree: '',
     send_brochure: '',
+    email_2:'sales@theliliumofficial.com.sg',
+    email_3:'james@limousinetransport.com',
+    new:'',
   }),
   methods: {
     send() {
@@ -315,6 +318,13 @@ export default {
         this.errors.push({ isAppointment: 'The make appt field is required.' })
       }
 
+      if(this.send_brochure!=false){
+        this.new= 'Yes'
+        if(this.send_brochure!=true){
+          this.new= 'No'
+        }
+      }
+
       if (!this.errors.length) {
         // eslint-disable-next-line
         Email.send({
@@ -323,31 +333,56 @@ export default {
           Password: process.env.EMAIL_API,
           To: process.env.EMAIL_USER,
           From: this.email,
-          Subject: process.env.EMAIL_TITLE + ' ' + this.enquiry,
+          Subject: 'The Lilium & The Gazania - New Appointment Submission' +' [' + this.name +']',
           Body:
-            '<b>Name: </b>' +
-            this.name +
-            '<br><b> Message: </b>' +
-            this.message +
-            '<br><b>Mobile: </b>' +
-            this.mobile +
-            '<br><b>Appointment: </b>' +
-            this.isAppointment,
+            '<h3>Dear Dave, </h3>' +
+            '<h4>Below are the details for the New Appointment Submission, do check it out: </h4>' + 
+            '<h4>Enquiry: ' + this.enquiry + '</h4>' +
+            '<h4>Name: ' + this.name + '</h4>' +
+            '<h4>Mobile: ' + this.mobile + '</h4>' +
+            '<h4>Email: ' + this.email + '</h4>' +
+            '<h4> Message: ' + this.message + '</h4>' +
+            '<h4>Appointment: ' + this.isAppointment + '</h4>' +
+            '<h4>Send Brochure: ' + this.new + '</h4>' +
+            '<br><h4>Thanks,</h4>' + 
+            '<h4>The Lilium & The Gazania</h4>',
         }).then(() => {
+          //first email will be sent to dave@singhaiyi.com
+       /*   Email.send({
+          Host: 'smtp.gmail.com',
+          Username: process.env.EMAIL_USER,
+          Password: process.env.EMAIL_API,
+          To: this.email_3,
+          From: this.email_2,
+          Subject: 'The Lilium & The Gazania - New Appointment Submission' +' [' + this.name +']',
+          Body:
+            '<h3>Dear Dave, </h3>' +
+            '<h4>Below are the details for the New Appointment Submission, do check it out: </h4>' + 
+            '<h4>Enquiry: ' + this.enquiry + '</h4>' +
+            '<h4>Name: ' + this.name + '</h4>' +
+            '<h4>Mobile: ' + this.mobile + '</h4>' +
+            '<h4>Email: ' + this.email + '</h4>' +
+            '<h4> Message: ' + this.message + '</h4>' +
+            '<h4>Appointment: ' + this.isAppointment + '</h4>' +
+            '<h4>Send Brochure: ' + this.new + '</h4>' +
+            '<br><h4>Thanks,</h4>' + 
+            '<h4>The Lilium & The Gazania</h4>',
+        }) */
+          //email will be sent directly to the customer
           Email.send({
           Host: 'smtp.gmail.com',
           Username: process.env.EMAIL_USER,
           Password: process.env.EMAIL_API,
           To: this.email,
-          From: process.env.EMAIL_USER,
+          From: this.email_2,
           Subject: 'The Lilium & The Gazania - Receipt Acknowledgement',
           Body:
-            '<h3><b>Dear ' + this.name + '</b><h3>' + 
+            '<h3>Dear ' + this.name + '<h3>' + 
             '<h4>Thank you for your interest in The Lilium & The Gazania. You will be posted on all latest updates for the new upcoming condominium.</h4>' + 
             '<h4>If you have left an inquiry, our staff will be in touch with you as soon as we can. </h4>'+ 
             '<h4>If you would like to view the show flat and get direct developer price with discounts, you need to Book an Appointment here before coming down. </h4>'+ 
             '<h4>Please check back our website for The Lilium & The Gazania as updates are uploaded regulary: <a href="https://theliliumofficial.com.sg/"> <b>theliliumofficial.com.sg</b></a></h4>' +  
-            '<h4>Should you have any queries, simply call us at <a href="tel:+6561003337"><b>+65 6100 3337</b></a> or reply to this email: <a href="mailto:dave@singhaiyi.com"><b>dave@singhaiyi.com</b></a></h4>'+
+            '<h4>Should you have any queries, simply call us at <a href="tel:+65 6100 3337"><b>+65 6100 3337</b></a> or reply to this email: <a href="mailto:dave@singhaiyi.com"><b>dave@singhaiyi.com</b></a></h4>'+
             '<h4>Have a nice day ahead!</h4><br>' + 
             '<h4>Thanks,</h4>' + 
             '<h4>The Lilium & The Gazania</h4>',

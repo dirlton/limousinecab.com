@@ -10,7 +10,7 @@
         <div class="space-y-2 text-center">
           <p class="text-xl">
             <span class="font-medium text-theme-500">Last updated</span>:
-            29-10-2022
+            11-02-2022
           </p>
           <p class="max-w-2xl mx-auto">
             Disclaimer: The Balance Units Chart displayed here is for reference
@@ -29,7 +29,7 @@
         </div>
         <div class="text-center">
           <NuxtLink
-            to="/public/pdf/the-lilium-balance-units-chart-singapore.pdf"
+            to="/public/pdf/The Lilium Elevation Chart_L.pdf"
             target="_blank"
             class="font-medium hover:underline"
           >
@@ -78,7 +78,7 @@
 <script>
 export default {
   data() {
-    return { url: process.env.BASE_URL ? '/' + process.env.BASE_URL + '/public/pdf/the-lilium-balance-units-chart-singapore.pdf': '/public/pdf/the-lilium-balance-units-chart-singapore.pdf'}
+    return { url: process.env.BASE_URL ? '/' + process.env.BASE_URL + '/public/pdf/The Lilium Elevation Chart_L.pdf': '/public/pdf/The Lilium Elevation Chart_L.pdf'}
   },
 }
 </script>
