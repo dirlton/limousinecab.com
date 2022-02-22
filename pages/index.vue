@@ -8,7 +8,7 @@
             The Lilium 
           </h3>
           <p>
-            Latest Unit Sold: #01-12 | 26 October 2021
+            Latest Unit Sold: #05-13 | 22 February 2022
             <NuxtLink
               to="/balance-units-chart"
               class="font-medium hover:underline text-theme-600"
@@ -19,7 +19,7 @@
             The Gazania
           </h3>
           <p>
-            Latest Unit Sold: #04-36 | 20th October 2021
+            Latest Unit Sold: #01-47 | 22 February 2022
             <NuxtLink
               to="/gazania/balance-units-chart"
               class="font-medium hover:underline text-theme-600"
@@ -30,13 +30,13 @@
         <div class="py-6 bg-theme-50">
           <div class="text-center">
             <h4 class="text-xl font-medium">Latest Updates</h4>
-            <p class="text-gray-600">Last updated: 10th February 2022</p>
+           <b> <p class="text-gray-600">Last updated: {{currentDate()}} </p> </b>
           </div>
           <div class="max-w-6xl px-4 mx-auto prose text-gray-800">
             <div class="max-w-2xl px-4 mx-auto">
               <ul>
                 <li>
-                  <strong>03-11-2021:</strong>
+                  <strong>22-02-2022:</strong>
                   <NuxtLink to="/book-an-appointment" class="!text-theme-600"
                     >Book an Appointment</NuxtLink
                   >
@@ -44,41 +44,41 @@
                   Price + Discounts.
                 </li>
                 <li>
-                  <strong>20-10-2021:</strong> Check our latest
-                  <NuxtLink to="/pricing" class="!text-theme-600">
-                    The Lilium Pricing
-                  </NuxtLink>
-                  here
-                </li>
-                 <li>
-                  <strong>20-10-2021:</strong> Check our latest
-                  <NuxtLink to="/gazania/pricing" class="!text-theme-600">
-                    The Gazania Pricing
-                  </NuxtLink>
-                  here
-                </li>
-                <li>
-                  <strong>20-10-2021:</strong> Check our latest
+                  <strong>22-02-2022:</strong> Check our latest
                   <NuxtLink to="/balance-units-chart" class="!text-theme-600">
                     The Lilium Balance Unit
                   </NuxtLink>
                   here
                 </li>
                 <li>
-                  <strong>20-10-2021:</strong> Check our latest
+                  <strong>22-02-2022:</strong> Check our latest
                   <NuxtLink to="/gazania/balance-units-chart" class="!text-theme-600">
                     The Gazania Balance Unit
                   </NuxtLink>
                   here
                 </li>
                 <li>
-                  <strong>20-10-2021:</strong>The latest  
+                  <strong>22-01-2022:</strong> Check our latest
+                  <NuxtLink to="/pricing" class="!text-theme-600">
+                    The Lilium Pricing
+                  </NuxtLink>
+                  here
+                </li>
+                 <li>
+                  <strong>22-01-2022:</strong> Check our latest
+                  <NuxtLink to="/gazania/pricing" class="!text-theme-600">
+                    The Gazania Pricing
+                  </NuxtLink>
+                  here
+                </li>
+                <li>
+                  <strong>20-01-2022:</strong>The latest  
                   <NuxtLink to="/floor-plan" class="!text-theme-600"
                     >The Lilium Floor Plan</NuxtLink
                   > is now available.
                 </li>
                 <li>
-                  <strong>20-10-2021:</strong>The latest  
+                  <strong>20-01-2022:</strong>The latest  
                   <NuxtLink to="/gazania/floor-plan" class="!text-theme-600"
                     >The Gazania Floor Plan</NuxtLink
                   > is now available.
@@ -472,5 +472,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    currentDate() {
+      const current = new Date();
+      const date = `${current.getDate()} - ${current.getMonth()+1} - ${current.getFullYear()}`;
+      return date;
+    }
+  }
+};
 </script>

@@ -10,7 +10,7 @@
         <div class="space-y-2 text-center">
           <p class="text-xl">
             <span class="font-medium text-theme-500">Last updated</span>:
-            11-02-2022
+            22-02-2022
           </p>
           <p class="max-w-2xl mx-auto">
             Disclaimer: The Balance Units Chart displayed here is for reference
