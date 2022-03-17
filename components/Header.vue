@@ -6,6 +6,7 @@
         aria-current="page"
         class="w-44 nuxt-link-exact-active nuxt-link-active"
         >
+		<!-- 
 		<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 250 150" style="enable-background:new 0 0 250 150;" xml:space="preserve">
 <style type="text/css">
@@ -2120,7 +2121,7 @@
 		C207.1,74,207.5,73.6,207.9,73.2z"/>
 	<path class="st20" d="M186.3,97.9c0,0.1,0.1,0.3,0.1,0.4c-0.1-0.1-0.1-0.2-0.2-0.3C186.2,98,186.2,98,186.3,97.9z"/>
 </g>
-</svg>
+</svg> -->
 
             </NuxtLink>
       <button @click.prevent="menuClick()">
@@ -2209,7 +2210,8 @@
                     nuxt-link-exact-active nuxt-link-active
                   "
                   >
-				  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+				 <!-- <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 50" style="enable-background:new 0 0 150 50;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#998675;}
@@ -2275,7 +2277,7 @@
 		c-0.7,0-1.1-0.1-1.4-0.1c0,0-0.3,0-0.7,0c-0.4,0-0.8,0-1,0c-0.2,0-0.3,0-0.3-0.1c0-0.1,0-0.1,0.1-0.1c0.2,0,0.4,0,0.5-0.1
 		c0.4-0.1,0.5-0.5,0.5-1c0.1-0.8,0.1-2.2,0.1-3.9V32.6z"/>
 </g>
-</svg>
+</svg> -->
                     </NuxtLink>
               </div>
               <div class="relative flex-1 px-4 mt-6 sm:px-6">
@@ -3049,9 +3051,9 @@
                         </ul>
                       </div>
                     </div>
-                    <div>
+					<div>
                       <NuxtLink
-                        to="/book-an-appointment"
+                        to="/rates"
                         class="
                           inline-block
                           w-full
@@ -3065,7 +3067,26 @@
                           hover:text-theme-900
                         "
                       >
-                        Book Showflat
+                        Compare Rates
+                      </NuxtLink>
+                    </div>
+                    <div>
+                      <NuxtLink
+                        to="/about"
+                        class="
+                          inline-block
+                          w-full
+                          px-2
+                          py-1
+                          font-medium
+                          rounded
+                          bg-theme-100
+                          hover:bg-theme-200
+                          mobile-menu
+                          hover:text-theme-900
+                        "
+                      >
+                        About
                       </NuxtLink>
                     </div>
                     <div>

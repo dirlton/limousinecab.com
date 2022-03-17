@@ -1,6 +1,6 @@
 <template>
 
-<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!--
 <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 250 150" style="enable-background:new 0 0 250 150;" xml:space="preserve">
 <style type="text/css">
@@ -2116,5 +2116,6 @@
 	<path class="st20" d="M186.3,97.9c0,0.1,0.1,0.3,0.1,0.4c-0.1-0.1-0.1-0.2-0.2-0.3C186.2,98,186.2,98,186.3,97.9z"/>
 </g>
 </svg>
-
+-->
+<a> </a>
 </template>

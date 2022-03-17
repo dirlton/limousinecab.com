@@ -5,7 +5,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
    router: {
-    base: '/limousine-cab',
+    base: '/',
   }, 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -49,10 +49,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-flatpickr','@nuxtjs/gtm'],
-  gtm:{
-    id:'GTM-NXNK4P8'
-  },
+  modules: ['nuxt-flatpickr'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -2962,9 +2962,9 @@
               </ul>
             </div>
           </li>
-          <li class="hover:bg-theme-700">
+		  <li class="hover:bg-theme-700">
             <NuxtLink
-              to="/book-an-appointment"
+              to="/rates"
               class="
                 inline-block
                 px-2
@@ -2974,7 +2974,22 @@
                 text-theme-900
               "
             >
-              Book Showflat
+              Compares Rates
+            </NuxtLink>
+          </li>
+          <li class="hover:bg-theme-700">
+            <NuxtLink
+              to="/about"
+              class="
+                inline-block
+                px-2
+                py-2
+                menu-item
+                hover:text-white
+                text-theme-900
+              "
+            >
+              About
             </NuxtLink>
           </li>
           <li class="hover:bg-theme-700">
