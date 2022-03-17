@@ -3088,7 +3088,7 @@
                       </NuxtLink>
                     </div>
                     <NuxtLink
-                      to="/book-an-appointment"
+                      to="/book-now"
                       class="
                         inline-block
                         font-medium
@@ -3101,7 +3101,7 @@
                         p-2
                         text-center
                       "
-                      >Get VVIP Discount</NuxtLink
+                      >Book Now</NuxtLink
                     >
                   </div>
                 </div>

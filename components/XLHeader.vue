@@ -3,6 +3,7 @@
     <div class="flex justify-between max-w-6xl px-1 mx-auto">
       <div class="flex items-center p-1">
         <NuxtLink to="/" aria-current="page" class="w-44">
+		<!-- 
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 250 150" style="enable-background:new 0 0 250 150;" xml:space="preserve">
 <style type="text/css">
@@ -2117,7 +2118,7 @@
 		C207.1,74,207.5,73.6,207.9,73.2z"/>
 	<path class="st20" d="M186.3,97.9c0,0.1,0.1,0.3,0.1,0.4c-0.1-0.1-0.1-0.2-0.2-0.3C186.2,98,186.2,98,186.3,97.9z"/>
 </g>
-</svg>
+</svg> -->
 
             </NuxtLink>
       </div>
@@ -2995,7 +2996,7 @@
       </div>
       <div class="flex flex-wrap items-center p-1">
         <NuxtLink
-          to="/book-an-appointment"
+          to="/book-now"
           class="
             inline-block
             font-medium
@@ -3006,7 +3007,7 @@
             hover:bg-theme-900
             p-2
           "
-          >Get VVIP Discount</NuxtLink
+          >Book Now</NuxtLink
         >
       </div>
     </div>

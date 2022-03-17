@@ -188,12 +188,12 @@
         </div>
       </div>
     </div>
-
+<!--
     <div id="whatsapp-chat" class="hide">
       <div class="header-chat">
         <div class="head-home">
           <div class="info-avatar">
-            <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+           
           <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 250 100" style="enable-background:new 0 0 250 100;" xml:space="preserve">
 <style type="text/css">
@@ -493,8 +493,7 @@
               </div>
               <div class="WhatsappChat__Time-sc-1wqac52-5 cqCDVm">
                 {{ datetime }}
-                <!-- <?php $dt=new DateTime("now", new DateTimeZone('Asia/Singapore')); echo $dt->format('H:i');
-                ?> -->
+                
               </div>
             </div>
           </div>
@@ -534,8 +533,8 @@
         />
       </svg>
       Chat with Us</a
-    >
-  </div>
+    > -->
+  </div> 
 </template>
 <script>
 /* eslint-disable */

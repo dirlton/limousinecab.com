@@ -3,13 +3,13 @@ export default {
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
-  /* target: 'static',
+  target: 'static',
    router: {
-    base: '/lilium-gazania',
-  }, */
+    base: '/limousine-cab',
+  }, 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'The Lilium',
+    title: 'Limousine Cab',
     htmlAttrs: {
       lang: 'en',
     },
