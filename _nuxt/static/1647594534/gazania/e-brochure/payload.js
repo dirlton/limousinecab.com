@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/gazania/e-brochure", {data:[{}],fetch:{},mutations:void 0});

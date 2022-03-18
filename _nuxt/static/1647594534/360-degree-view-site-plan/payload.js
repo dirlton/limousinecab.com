@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/360-degree-view-site-plan", {data:[{}],fetch:{},mutations:void 0});

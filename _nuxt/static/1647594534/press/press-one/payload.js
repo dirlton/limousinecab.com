@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/press/press-one", {data:[{}],fetch:{},mutations:void 0});

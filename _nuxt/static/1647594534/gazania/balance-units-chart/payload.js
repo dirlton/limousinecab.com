@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/gazania/balance-units-chart", {data:[{}],fetch:{},mutations:void 0});

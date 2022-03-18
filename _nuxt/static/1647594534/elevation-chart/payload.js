@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/elevation-chart", {data:[{}],fetch:{},mutations:void 0});

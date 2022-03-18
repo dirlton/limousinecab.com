@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/payar-lebar", {data:[{}],fetch:{},mutations:void 0});

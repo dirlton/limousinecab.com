@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/financing/purchase-timeline", {data:[{}],fetch:{},mutations:void 0});

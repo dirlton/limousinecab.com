@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/bidadari-estate", {data:[{}],fetch:{},mutations:void 0});

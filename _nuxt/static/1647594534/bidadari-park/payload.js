@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/bidadari-park", {data:[{}],fetch:{},mutations:void 0});
